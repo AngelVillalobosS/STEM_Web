@@ -275,3 +275,10 @@ margin-top: -400px;
      transform: translateX(-7px);
 }
 }
+
+.Bottom{
+    display: block;
+    margin-left: 45%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}

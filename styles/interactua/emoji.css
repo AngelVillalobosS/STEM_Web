@@ -1,7 +1,16 @@
+body{
+    background: radial-gradient(ellipse at top, #e66465, transparent),
+                radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+    background-attachment: fixed;
+}
 .contenedor{
+    background-color: #EEAB0A;
+    box-shadow: #EEAB0A 0em 0em 3em ;
+    border-radius: 50% 50%;
     height: 400px;
     width: 400px;
     margin: 120px auto;
+    margin-top: 15%;
     cursor: pointer;
 }
 .cara{
@@ -48,4 +57,9 @@
 }
 .cara:hover .ocular{
     transform: translateY(-27px);
+}
+.bottom{
+    display: block;
+    margin-left: 45%;
+    margin-bottom: 5%;
 }

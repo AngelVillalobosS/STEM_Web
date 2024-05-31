@@ -1,14 +1,23 @@
 :root {
-    --color-right: #9999ff;
+    /*--color-right: #9999ff;*/
     --color-left: #da9fc7;
+    --color-right: #69DDFF;
 }
 
 body, html {
-    background-color: #666666;
+    background: radial-gradient(ellipse at top, #69DDFF, transparent),
+    radial-gradient(ellipse at top right, #e66465, transparent),
+    radial-gradient(ellipse at top left, #9751E0, transparent),
+    radial-gradient(ellipse at bottom, #8AE051, transparent);
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+}
+.ImgInteractua{
+    border: 1px;
+    border-radius: 12em 12px;
+    box-shadow: rgba(0,0,0,0.32) 1em 1em 20px;
 }
 
 .container {
@@ -60,8 +69,13 @@ body, html {
             padding: 20px 50px;
             border-radius: 10px;
             font-size: 20px;
-            color: white;
+            color: black;
             cursor: pointer;
         }
     }
+}
+.bottom{
+    display: block;
+    margin-left: 45%;
+    margin-bottom: 5%;
 }
