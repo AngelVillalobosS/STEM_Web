@@ -1,0 +1,52 @@
+html{
+  height: 100%;
+}
+body {
+  background: radial-gradient(ellipse at top, #69ddff, transparent),
+    radial-gradient(ellipse at top right, #e66465, transparent),
+    radial-gradient(ellipse at top left, #9751e0, transparent),
+    radial-gradient(ellipse at bottom, #8ae051, transparent), fixed;
+}
+h2{
+  font-size: 2.5em;
+}
+h5{
+  font-size: 1.3em;
+}
+.MainContainer{
+  align-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 2em;
+}
+.titleDiv{
+  display: flex;
+  margin: 2em 2em 2em 2em;
+}
+.textDiv{
+  align-self: center;
+  display: inline-block;
+  margin-left: 30%;
+}
+.text{
+  align-self: center;
+  margin: 2em 2em 2em 2em;
+}
+.bottom{
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-bottom: 5%;
+}
+#leftButton{
+  padding-right: 2.1em;
+  padding-left: 2.1em;
+}
+#buttonRight{
+  left: 25%;
+}

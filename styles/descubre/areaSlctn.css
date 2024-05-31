@@ -1,0 +1,28 @@
+html{
+    height: 100%;
+}
+h2{
+    margin-left: 40%;
+}
+.secciontitle{
+    border: aqua solid 1px;
+    color: aliceblue;
+    position: static;
+    display: block;
+    padding: 3em 3em;
+    margin-top: 3em;
+}
+.title{
+    border: pink 1px solid;
+    color: aliceblue;
+    text-align: center;
+    position: static;
+    display: block;
+    margin-bottom: 3em;
+}
+#C1{
+    border: green solid 4px;
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}

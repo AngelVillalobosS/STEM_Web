@@ -26,6 +26,9 @@ a{
     padding: 10px 30px;
     transition: 0.5s;
 }
+.starbutton{
+    color: #000;
+}
 a:hover{
     color: var(--clr);
     letter-spacing: 0.25em;
@@ -37,6 +40,13 @@ a::before{
     position:  absolute;
     inset: 2px;
     background: #27282c;
+}
+.starbutton::before{
+    content: '';
+    position:  absolute;
+    inset: 2px;
+    background: #fff;
+    color: #000;
 }
 a span{
     position: relative;
@@ -58,6 +68,9 @@ a i::before{
     background: #27282c;
     border: 2px solid var(--clr);
     transition: 0.5s;
+}
+.starbutton{
+
 }
 a:hover i::before{
     left: 0;
