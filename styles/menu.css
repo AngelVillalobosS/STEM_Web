@@ -1,29 +1,76 @@
+@font-face {
+    font-family: "Seymour One";
+    src: url('../fonts/SeymourOne-Regular.ttf') format('truetype'); /* Ajusta la ruta según tu estructura de proyecto */
+    font-weight: 400;
+    font-style: normal;
+  }
+
 :root {
     --color-right: #9999ff;
     --color-left: #da9fc7;
 }
 
 body, html {
-    background-color: #666666;
     margin: 0;
     padding: 0;
     height: 100%;
+    background-image: url('../images/fondo.jpg'); /* Ruta relativa a la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra el 100% del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el contenedor */
+    background-attachment: fixed; /* Hace que la imagen de fondo sea fija durante el scroll */
     font-family: Arial, sans-serif;
+    p {
+        font-family: "Seymour One", sans-serif;
+    }
 }
 
 .container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
     .cont-header {
-        /* background-color: #f4f4f4; */
+        background-color: none;
+        display: flex;
+        width: 100%;
         height: 20%;
         text-align: center;
-        padding: 0 0;
-        font-size: 25px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        /* padding: 0 0; */
+        font-size: 28px;
         color: white;
-
-        h2 { margin-top: 90px; }
+        text-shadow: -1px -1px 0 black,  
+            2px -1px 0 black,
+            -1px 2px 0 black,
+            2px 1px 0 black;
+        
+        h2 {
+            /* margin-top: 90px;  */
+            font-family: "Seymour One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        img {
+            max-height: 80px;
+        }
+        .card {
+            display: flex; /* Hace que los elementos hijos se posicionen en línea */
+            align-items: center; /* Centra verticalmente los elementos hijos */
+            align-content: center;
+            text-align: center;
+            img {
+                margin-right: 40px; /* Añade un espacio entre las imágenes y los textos */
+                margin-left: 40px; /* Añade un espacio entre las imágenes y los textos */
+            }
+            h2 {
+                margin: 0; /* Elimina el margen predeterminado del h2 */
+            }
+        }
+        
+        
     }
     .cont-main {
         height: 85%;
@@ -33,11 +80,26 @@ body, html {
         h3 {
             margin-top: 0;
             font-size: 35px;
+            font-family: "Seymour One", sans-serif;
+            text-shadow: -1px -1px 0 black,  
+            2px -1px 0 black,
+            -1px 2px 0 black,
+            2px 1px 0 black;
         }
         p {
+            height: 30px;
             margin: 10px 0 20px;
             padding: 50px 0;
             font-size: 20px;
+            font-family: "Bangers", system-ui;
+        }
+        .card {
+            background: white;
+            height: 300px;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
         }
         .left, .right {
             flex: 1;
@@ -45,6 +107,9 @@ body, html {
             box-sizing: border-box;
             align-items: center;
             align-content: center;
+        }
+        .card:hover {
+            box-shadow: 0px 0px 30px rgb(157, 161, 164);
         }
         .left {
             color: var(--color-left);
@@ -65,6 +130,7 @@ body, html {
             }
         }
         input[type="button"] {
+            border: none;
             padding: 20px 50px;
             border-radius: 10px;
             font-size: 20px;
